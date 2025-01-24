@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sugerencias o comentarios </title>
+</head>
+<body>
+
+    <header>
+        <h1> ¿Tienes una sugerencia para Recetas Veganas? Te escuchamos. </h1>
+    </header>
+
+    <main>
+
+        <section>
+            <form action="">
+                <fieldset> <!-- Nos permite agrupar por campos -->
+                    <legend> Datos básicos </legend>
+
+                    Nombre y apellido(s): <input type="text" placeholder="Blanca Adriana Pérez" required><br>
+                    Correo electrónico: <input type="email" placeholder="blanca.perez@gmail.com" required><br>
+
+
+                </fieldset>
+                <fieldset>
+                    <legend> Te queremos conocer </legend>
+                    ¿Cuántos años llevas siendo vegano? <input type="number" min="1" max="50"><br>
+                    ¿Cuál es tu receta favorita de Recetas Veganas? 
+                    <select name="sucursales">
+                        <option value=""> Enmoladas de plátano macho </option>
+                        <option value=""> Encacahuatado de setas y papas </option>
+                        <option value=""> Estofado de papas y bistec </option>
+                        <option value=""> Espagueti de chile poblano </option>
+                        <option value=""> Tofu a la mexicana </option>
+                    </select>
+    
+
+
+                </fieldset>
+                <fieldset>
+                    <legend> ¡Te escuchamos! </legend>
+                    <input type="text" placeholder="Escribe aquí tu comentario." required> <br>
+                    Fecha: <input type="date">
+                </fieldset>
+                <fieldset>
+                    <legend> Datos del envío </legend>
+                    <!-- El valor del atributo for en label, debe ser igual al valor del atributo id del input correspondiente -->
+                    <label for="recomendar-si"> ¿Nos recomendarías a un amigo?
+                        <input id="recomendar-si" type="radio" name="recomendar-amigo"> Sí :)
+                    </label>
+
+                    <label for="recomendar-no"> 
+                        <input id="recomendar-no" type="radio" name="recomendar-amigo"> No :(
+                    </label>
+                </fieldset>
+
+                <!-- El atributo name debe ser igual para todas las opciones del input de tipo radio para que solo se pueda seleccionar una opción y no todas -->
+                <!-- Casilla de verifiación -->
+                <input type="checkbox" required> Acepto términos y condiciones
+                <br>
+                <button type="submit"> Enviar a Recetas Veganas </button>
+
+            </form>
+        </section>
+
+    </main>
+
+
+
+    
+</body>
+</html>
+
+ 
+
+ 
+
+    
+
+</body>
+
+</html>
